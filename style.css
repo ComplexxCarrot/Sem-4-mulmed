@@ -7,6 +7,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .fullBody{
@@ -14,41 +15,47 @@ body{
 }
 
 .floatingMenu{
-    position: relative;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    flex-direction: column;
-}
-
-.floatingMenu .shape{
-    display: flex;
+    position: fixed;
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
     height: 50px;
     background-color: rgb(98, 0, 255);
-    border: 0px solid green;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.23);
 }
 
-.floatingMenu .shape ul{
+.floatingMenu ul{
+    list-style-type: none;
     text-align: center;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
-.floatingMenu .shape ul li{
-    color: aliceblue;
-    font-weight: bold;
-    display: inline;
+.floatingMenu ul li{
+    /* width: 20%; */
+    width: 18%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.floatingMenu ul li .rectangle{
     background-color: rgb(98, 0, 255);
-    border: 0px solid green;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: auto;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    word-wrap: break-word;
+    height: 50px;
+    margin: 0;
+    padding: 0;
 }
 
-.floatingMenu .shape ul li:hover{
+.floatingMenu ul li .rectangle:hover{
     background-color: rgb(25, 0, 255);
+    cursor: pointer;
 }
 
 .floatingMenu .shape .li{
@@ -61,6 +68,11 @@ body{
 
 .empty-space-2{
     height: 10px;
+}
+
+.lecture .vid{
+    width: 100%;
+    height: auto;
 }
 
 .title{
@@ -81,13 +93,80 @@ body{
 }
 
 .content p{
-    text-align: left;
+    /* text-align: left; */
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content-khusus{
+    width: 60%;
+    margin: auto;
+}
+
+.content-khusus p{
+    /* text-align: left; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content-khusus .sifat1{
+    height: 300px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.content-khusus .sifat2{
+    height: 200px;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .fullBody .lecture{
-    width: 70%;
+    width: 65%;
     margin: auto;
     background-color: white;
+}
+
+.content-khusus2{
+    width: 60%;
+    margin: auto;
+}
+
+.content-khusus2 img{
+    height: 300px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.content-khusus2 p{
+    /* text-align: left; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.content-khusus2 #hide{
+    display: none;
+}
+
+.trigger{
+    font-weight: bold;
+    height: 45px;
+    background-color: aqua;
+    width: 30%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
+    align-items: center;
+    text-justify: inter-word;
+    word-wrap: break-word;
 }
